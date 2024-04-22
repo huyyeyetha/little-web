@@ -1,0 +1,39 @@
+.login-register-page {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .band1 {
+        height: 83%;
+        width: 29%;
+        left: 33%;
+        background-color: #3b9c39dd;
+        .button {
+            background-color: #ffffff33;
+            transition: 0.25s;
+            &:hover {
+                background-color: #ffffff55;
+            }
+            .icon {
+                margin-bottom: 1px;
+            }
+        }
+    }
+    .band2 {
+        border-radius: 3rem 0 3rem 0;
+        width: 73%;
+        .content {
+            margin-right: 4rem;
+            h2 {
+                color: #444;
+            }
+            .forgot-password {
+                font-weight: 500;
+                transition: 0.25s;
+                &:hover {
+                    color: #0f50c8 !important;
+                }
+            }
+        }
+    }
+}

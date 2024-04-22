@@ -1,0 +1,28 @@
+.set-garden-threshold-page {
+    > .title {
+        font-weight: 500;
+        border-bottom: 2px solid #999;
+    }
+    .env-data {
+        height: 80%;
+        overflow-y: scroll;
+        .data-card {
+            .icon {
+                background-color: #ddd;
+                font-size: 5rem;
+                width: 10rem;
+                text-align: center;
+            }
+            .data {
+                .title {
+                    color: #666;
+                    font-weight: 500;
+                    font-size: 1.7rem;
+                }
+            }
+            &:hover {
+                background-color: #eee;
+            }
+        }
+    }
+}

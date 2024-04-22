@@ -1,0 +1,100 @@
+.control-page {
+    > .title {
+        border-bottom: 2px solid #999;
+    }
+    .env-control {
+        height: 77%;
+        overflow-y: scroll;
+        .control-bulb-card {
+            border: 1px solid black;
+            .bulb{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;                
+
+                .icon {
+                    .default-layout {
+                        height: 63px;
+                        width: 63px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    background-color: #ddd;
+                    font-size: 5rem;
+                    width: 8rem;
+
+                    justify-content: center;    
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+                .bulb-set{
+                    width: 125px;
+                    height: 58px;
+                    background-color: #ddd;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: #ccc;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .data {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    height: 33%;
+                    .s{
+                        height: fit-content;
+                        color: #00000099;
+                        font-weight: 500;
+                        font-size: 1.7rem;
+                    }
+                    .o{
+                        width: 100px;
+                        height: 50px;
+                        .toggle{
+                            width: 100px;
+                            height: 50px;
+                        }
+                    }
+                    .t{
+                        width: 6rem;
+                        height: 3rem;
+                        background-color: #ddd;  
+                        font-size: 20px;
+                        font-weight: 500;   
+                        &:hover{
+                            background-color: #ccc;
+                            cursor: pointer;
+                        }     
+                    }
+                }
+                
+                
+                
+                
+            }
+            // &:hover {
+            //     background-color: #eee;
+            // }
+        }
+    }
+}
+
+.line-bt1{
+    border-bottom: 1px solid #2b2b2b ;
+}

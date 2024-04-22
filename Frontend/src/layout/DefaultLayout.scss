@@ -1,0 +1,41 @@
+.default-layout {
+    --input-bg: #e8f0fe;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    > .header {
+        --header-height: 55px;
+        height: var(--header-height);
+        background-color: #ffffff55;
+        .pages {
+            .link {
+                height: var(--header-height);
+                line-height: var(--header-height);
+                color: #444;
+                font-weight: 500;
+                transition: 0.3s;
+                &:hover {
+                    background-color: #ffffff88;
+                }
+                &.active {
+                    background-color: #56c754;
+                }
+            }
+        }
+        .logout {
+            background-color: #00000044;
+            padding: 0 1.9rem;
+            button {
+                color: white;
+                transition: 0.25s;
+                &:hover {
+                    color: #ea3636;
+                }
+            }
+        }
+    }
+    .content {
+        height: 87%;
+    }
+}

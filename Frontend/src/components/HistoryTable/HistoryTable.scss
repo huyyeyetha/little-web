@@ -1,0 +1,29 @@
+.history-table {
+    .filter {
+        > * {
+            font-size: 1.1rem;
+        }
+        input {
+            width: max-content;
+            width: 155px;
+            background-color: var(--input-bg);
+        }
+    }
+    .table {
+        div {
+            color: #555;
+            transition: 0.2s;
+            &:hover {
+                background-color: #eee;
+            }
+            .time {
+                width: 210px;
+            }
+        }
+    }
+    .pagination {
+        button {
+            height: max-content;
+        }
+    }
+}

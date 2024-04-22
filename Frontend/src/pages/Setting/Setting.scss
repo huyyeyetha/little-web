@@ -1,0 +1,24 @@
+.setting-page {
+    box-shadow: 5px 5px 15px 10px #00000022;
+    .FeatureBox {
+        border: 1px black solid;
+        width: 40%;
+        height: 30%;
+        text-align: center;
+        font-size: 20px;
+        margin: 10px;
+        display: flex;
+        align-items: center; /* Căn giữa theo chiều dọc */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        background-color: lightgray;
+    }
+
+    .FeatureBox:hover {
+        background-color: ghostwhite;
+    }
+
+    .title {
+        font-weight: 500;
+        border-bottom: 2px solid #999;
+    }
+}

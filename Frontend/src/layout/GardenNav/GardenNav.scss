@@ -1,0 +1,29 @@
+.garden-nav-container {
+    height: 100%;
+    .nav {
+        .link {
+            width: max-content;
+            color: #444;
+            font-weight: 500;
+            text-decoration: none;
+            padding-left: 3.3rem;
+            padding-right: 3.3rem;
+            box-shadow: 3px 3px 5px 0px #00000022;
+            transition: 0.3s;
+            &:hover {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+            &.active {
+                width: 100%;
+                border-radius: 10rem;
+                border-top-left-radius: 5rem;
+                border-bottom-left-radius: 20rem;
+                background-color: #59d257ee;
+            }
+        }
+    }
+    .content {
+        box-shadow: 5px 5px 15px 10px #00000022;
+    }
+}
