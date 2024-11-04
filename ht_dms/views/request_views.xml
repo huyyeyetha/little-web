@@ -1,0 +1,31 @@
+<odoo>
+    <record id="view_request_tree" model="ir.ui.view">
+        <field name="name">document.request.tree</field>
+        <field name="model">document.request</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="document_id"/>
+                <field name="request_type"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_request_form" model="ir.ui.view">
+        <field name="name">document.request.form</field>
+        <field name="model">document.request</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="document_id"/>
+                        <field name="request_type"/>
+                        <field name="status"/>
+                        <field name="request_date"/>
+                        <field name="requested_by"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

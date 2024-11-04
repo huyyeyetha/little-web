@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_document_management_user,document_management_user,model_document_management,base.group_user,1,0,0,0
+access_document_management_manager,document_management_manager,model_document_management,base.group_system,1,1,1,1
+access_document_request_user,document_request_user,model_document_request,base.group_user,1,0,0,0
+access_document_request_manager,document_request_manager,model_document_request,base.group_system,1,1,1,1

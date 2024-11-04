@@ -1,0 +1,21 @@
+<odoo>
+    <menuitem id="menu_document_management_root" name="Document Management" sequence="2"/>
+    
+    <menuitem id="menu_document_management_documents" name="Documents" parent="menu_document_management_root"/>
+    <menuitem id="menu_document_management_requests" name="Requests" parent="menu_document_management_root"/>
+    
+    <record id="action_document_management" model="ir.actions.act_window">
+        <field name="name">Documents</field>
+        <field name="res_model">document.management</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_document_requests" model="ir.actions.act_window">
+        <field name="name">Requests</field>
+        <field name="res_model">document.request</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem id="menu_document_management_document_action" action="action_document_management" parent="menu_document_management_documents"/>
+    <menuitem id="menu_document_management_request_action" action="action_document_requests" parent="menu_document_management_requests"/>
+</odoo>
