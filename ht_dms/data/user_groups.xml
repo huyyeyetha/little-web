@@ -1,0 +1,14 @@
+<odoo>
+    <record id="group_document_guest" model="res.groups">
+        <field name="name">Guest</field>
+    </record>
+    <record id="group_document_employee" model="res.groups">
+        <field name="name">Employee</field>
+    </record>
+    <record id="group_document_manager" model="res.groups">
+        <field name="name">Manager</field>
+    </record>
+    <record id="group_document_admin" model="res.groups">
+        <field name="name">Administrator</field>
+    </record>
+</odoo>
