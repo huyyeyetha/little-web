@@ -1,0 +1,39 @@
+<odoo>
+    <!-- Phân loại module cho nhóm HtDoc -->
+    <record model="ir.module.category" id="module_category_htdoc">
+        <field name="name">HtDoc</field>
+    </record>
+
+    <!-- Nhóm Guest: chỉ có quyền cơ bản từ base.group_user -->
+    <record id="group_document_guest" model="res.groups">
+        <field name="name">Guest</field>
+        <field name="comment">Chi xem tai lieu.</field>
+        <field name="category_id" ref="module_category_htdoc"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <!-- Nhóm Employee: kế thừa quyền của Guest và có quyền gửi yêu cầu tạo tài liệu -->
+    <record id="group_document_employee" model="res.groups">
+        <field name="name">Employee</field>
+        <field name="comment">Them quyen tao, muon tai lieu.</field>
+        <field name="category_id" ref="module_category_htdoc"/>
+        <field name="implied_ids" eval="[(4, ref('group_document_guest'))]"/>
+    </record>
+
+    <!-- Nhóm Manager: kế thừa quyền của Employee, có quyền xác nhận tài liệu -->
+    <record id="group_document_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="comment">Them quyen xac nhan va xoa tai lieu.</field>
+        <field name="category_id" ref="module_category_htdoc"/>
+        <field name="implied_ids" eval="[(4, ref('group_document_employee'))]"/>
+    </record>
+
+    <!-- Nhóm Administrator: kế thừa quyền của Manager, có quyền quản lý người dùng và tài liệu -->
+    <record id="group_document_admin" model="res.groups">
+        <field name="name">Administrator</field>
+        <field name="comment">Co moi quyen.</field>
+        <field name="category_id" ref="module_category_htdoc"/>
+        <field name="implied_ids" eval="[(4, ref('group_document_manager'))]"/>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+    </record>
+</odoo>

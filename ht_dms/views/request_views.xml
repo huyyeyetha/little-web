@@ -29,3 +29,56 @@
         </field>
     </record>
 </odoo>
+
+<!-- <odoo>
+    <record id="view_request_form" model="ir.ui.view">
+        <field name="name">document.request.form</field>
+        <field name="model">document.request</field>
+        <field name="arch" type="xml">
+            <form string="Document Creation Request">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="description"/>
+                        <field name="content"/>
+                        <field name="status" readonly="1"/>
+                        <field name="requested_by" readonly="1"/>
+                    </group>
+                    <footer>
+                        <button name="submit_request" type="object" string="Submit" 
+                                states="draft" class="btn-primary"/>
+                        <button name="approve_request" type="object" string="Approve" 
+                                states="submitted" class="btn-success" 
+                                groups="ht_dms.group_document_manager"/>
+                        <button name="reject_request" type="object" string="Reject" 
+                                states="submitted" class="btn-danger" 
+                                groups="ht_dms.group_document_manager"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_request_tree" model="ir.ui.view">
+        <field name="name">document.request.tree</field>
+        <field name="model">document.request</field>
+        <field name="arch" type="xml">
+            <tree string="Document Requests">
+                <field name="name"/>
+                <field name="type"/>
+                <field name="status"/>
+                <field name="requested_by"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_document_request" model="ir.actions.act_window">
+        <field name="name">Document Requests</field>
+        <field name="res_model">document.request</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_document_request" name="Document Requests" 
+              parent="ht_dms.menu_ht_dms_root" action="action_document_request"/>
+</odoo> -->

@@ -10,7 +10,7 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'data/user_groups.xml',
+        'security/user_groups.xml',
         'views/document_views.xml',
         'views/request_views.xml',
         'views/menu_views.xml',

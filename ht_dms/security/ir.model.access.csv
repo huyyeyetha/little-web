@@ -1,5 +1,15 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_document_management_user,document_management_user,model_document_management,base.group_user,1,0,0,0
-access_document_management_manager,document_management_manager,model_document_management,base.group_system,1,1,1,1
-access_document_request_user,document_request_user,model_document_request,base.group_user,1,0,0,0
-access_document_request_manager,document_request_manager,model_document_request,base.group_system,1,1,1,1
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_document_guest","Document Guest","model_document_management","ht_dms.group_document_guest",1,0,0,0
+"access_document_employee","Document Employee","model_document_management","ht_dms.group_document_employee",1,0,1,0
+"access_document_manager","Document Manager","model_document_management","ht_dms.group_document_manager",1,1,1,0
+"access_document_admin","Document Admin","model_document_management","ht_dms.group_document_admin",1,1,1,1
+
+"access_document_request_guest","Document Request Guest","model_document_request","ht_dms.group_document_guest",1,0,0,0
+"access_document_request_employee","Document Request Employee","model_document_request","ht_dms.group_document_employee",1,1,1,0
+"access_document_request_manager","Document Request Manager","model_document_request","ht_dms.group_document_manager",1,1,1,0
+"access_document_request_admin","Document Request Admin","model_document_request","ht_dms.group_document_admin",1,1,1,1
+
+"access_document_loan_guest","Document Loan Guest","model_document_loan","ht_dms.group_document_guest",1,0,0,0
+"access_document_loan_employee","Document Loan Employee","model_document_loan","ht_dms.group_document_employee",1,0,1,0
+"access_document_loan_manager","Document Loan Manager","model_document_loan","ht_dms.group_document_manager",1,1,1,0
+"access_document_loan_admin","Document Loan Admin","model_document_loan","ht_dms.group_document_admin",1,1,1,1

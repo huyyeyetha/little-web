@@ -3,3 +3,4 @@
 from . import document
 from . import request
 from . import user_group
+from . import document_loan

@@ -1,0 +1,39 @@
+<odoo>
+    <record id="view_document_loan_form" model="ir.ui.view">
+        <field name="name">document.loan.form</field>
+        <field name="model">document.loan</field>
+        <field name="arch" type="xml">
+            <form string="Document Loan">
+                <sheet>
+                    <group>
+                        <field name="document_id"/>
+                        <field name="borrower_id" readonly="1"/>
+                        <field name="loan_date" readonly="1"/>
+                        <field name="return_date"/>
+                        <field name="state" readonly="1"/>
+                    </group>
+                    <footer>
+                        <button name="action_return" type="object" string="Return" states="borrowed" class="oe_highlight"/>
+                        <button string="Close" class="oe_link" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_document_loan_tree" model="ir.ui.view">
+        <field name="name">document.loan.tree</field>
+        <field name="model">document.loan</field>
+        <field name="arch" type="xml">
+            <tree string="Document Loan">
+                <field name="document_id"/>
+                <field name="borrower_id"/>
+                <field name="loan_date"/>
+                <field name="return_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    
+</odoo>
