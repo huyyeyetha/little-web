@@ -1,0 +1,42 @@
+<odoo>
+    <!-- Menu chính -->
+    <menuitem id="construction_inventory_management_menu" 
+              name="Construction Inventory Management" 
+              sequence="10" 
+              action="action_inventory_dashboard" />
+
+    <!-- Submenu - Bảng điều khiển tồn kho -->
+    <menuitem id="inventory_dashboard_menu" 
+              name="Dashboard" 
+              parent="construction_inventory_management_menu" 
+              action="action_inventory_dashboard" 
+              sequence="10"/>
+
+    <!-- Submenu - Yêu cầu vật liệu -->
+    <menuitem id="material_request_menu" 
+              name="Material Requests" 
+              parent="construction_inventory_management_menu" 
+              action="action_material_request" 
+              sequence="20"/>
+
+    <!-- Submenu - Chuyển kho -->
+    <menuitem id="stock_transfer_menu" 
+              name="Stock Transfers" 
+              parent="construction_inventory_management_menu" 
+              action="action_stock_transfer" 
+              sequence="30"/>
+
+    <!-- Submenu - Kiểm soát ngân sách -->
+    <menuitem id="budget_control_menu" 
+              name="Budget Control" 
+              parent="construction_inventory_management_menu" 
+              action="action_budget_control" 
+              sequence="40"/>
+
+    <!-- Submenu - Báo cáo -->
+    <menuitem id="reports_dashboard_menu" 
+              name="Reports" 
+              parent="construction_inventory_management_menu" 
+              action="action_reports_dashboard" 
+              sequence="50"/>
+</odoo>

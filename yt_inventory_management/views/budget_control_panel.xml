@@ -1,0 +1,25 @@
+<odoo>
+    <record id="view_budget_control_panel" model="ir.ui.view">
+        <field name="name">budget.control.form</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <form string="Budget Control">
+                <sheet>
+                    <group>
+                        <field name="budget_amount"/>
+                        <field name="spent_amount"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_budget_control" model="ir.actions.act_window">
+        <field name="name">Budget Control</field>
+        <field name="res_model">project.project</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_budget_control_panel"/>
+        <field name="target">current</field>
+    </record>
+</odoo>

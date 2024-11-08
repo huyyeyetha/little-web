@@ -1,0 +1,25 @@
+<odoo>
+    <record id="view_reports_dashboard" model="ir.ui.view">
+        <field name="name">reports.dashboard.form</field>
+        <field name="model">stock.quant</field>
+        <field name="arch" type="xml">
+            <form string="Reports Dashboard">
+                <sheet>
+                    <group>
+                        <field name="product_id"/>
+                        <field name="quantity"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_reports_dashboard" model="ir.actions.act_window">
+        <field name="name">Reports Dashboard</field>
+        <field name="res_model">stock.quant</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_reports_dashboard"/>
+        <field name="target">current</field>
+    </record>
+</odoo>

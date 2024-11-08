@@ -1,0 +1,25 @@
+<odoo>
+    <record id="view_transfer_approval_form" model="ir.ui.view">
+        <field name="name">stock.transfer.form</field>
+        <field name="model">stock.picking</field>
+        <field name="arch" type="xml">
+            <form string="Stock Transfer Approval">
+                <sheet>
+                    <group>
+                        <field name="product_id"/>
+                        <field name="quantity"/>
+                        <field name="transfer_status"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_stock_transfer" model="ir.actions.act_window">
+        <field name="name">Stock Transfers</field>
+        <field name="res_model">stock.picking</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_transfer_approval_form"/>
+        <field name="target">current</field>
+    </record>
+</odoo>

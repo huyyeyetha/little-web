@@ -1,0 +1,23 @@
+<odoo>
+    
+    <record id="group_inventory_manager" model="res.groups">
+        <field name="name">Inventory Manager</field>
+        <!-- <field name="category_id" ref="stock.group_inventory"/> -->
+    </record>
+
+    <record id="group_inventory_user" model="res.groups">
+        <field name="name">Inventory User</field>
+        <!-- <field name="category_id" ref="stock.group_inventory"/> -->
+    </record>
+
+    <record id="group_budget_control_manager" model="res.groups">
+        <field name="name">Budget Control Manager</field>
+        <!-- <field name="category_id" ref="project.group_project_user"/> -->
+    </record>
+
+    <record id="group_budget_control_user" model="res.groups">
+        <field name="name">Budget Control User</field>
+        <!-- <field name="category_id" ref="project.group_project_user"/> -->
+    </record>
+
+</odoo>

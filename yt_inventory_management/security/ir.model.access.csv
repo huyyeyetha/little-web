@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_inventory_item_manager,Inventory Item Manager Access,model_inventory_item,group_inventory_manager,1,1,1,1
+access_inventory_item_user,Inventory Item User Access,model_inventory_item,group_inventory_user,1,0,0,0
+access_material_request_manager,Material Request Manager Access,model_material_request,group_inventory_manager,1,1,1,1
+access_material_request_user,Material Request User Access,model_material_request,group_inventory_user,1,0,0,0
+access_stock_transfer_manager,Stock Transfer Manager Access,model_stock_transfer,group_inventory_manager,1,1,1,1
+access_stock_transfer_user,Stock Transfer User Access,model_stock_transfer,group_inventory_user,1,0,0,0
+access_budget_control_manager,Budget Control Manager Access,model_budget_control,group_inventory_manager,1,1,1,1
+access_budget_control_user,Budget Control User Access,model_budget_control,group_inventory_user,1,0,0,0
